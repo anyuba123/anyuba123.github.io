@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+}
+
+#container {
+  width: 350px;
+  height: 70vh;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#container .elements img {
+  width: 25%;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+#container .elements h2 {
+  font-size: clamp(30px, 2vw, 30px);
+  color: #fff;
+}
+
+#container .elements .firts {
+  margin-top: -20px;
+  font-size: clamp(17px, 2vw, 17px);
+  color: hsl(75, 94%, 57%);
+}
+
+#container .elements .second {
+  margin-top: 10px;
+  font-size: clamp(20px, 2vw, 20px);
+  color: #fff;
+
+}
+
+#container .elements a {
+  width: 85%;
+  margin: 5px;
+  margin-left: 45px;
+  margin-right: 45px;
+
+}
+
+#container .elements a .buton {
+  background-color: hsl(0, 0%, 20%);
+  color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  height: 40px;
+  font-size: clamp(15px, 2vw, 15px);
+  cursor: pointer;
+}
+
+#container .elements a .buton:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
